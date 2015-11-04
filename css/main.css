@@ -22,14 +22,35 @@ body{
 	display:inline;
 }
 
-.col-md-8 > img{ /* child selector, selector img is an immediate child of element col-md-8 */
-	width:150px;
+.logo img{
+	height:100px;
 	padding:0 0 0 1%;
-	margin:0;
-	display:inline;
+	margin:-2% 0 0 0;
 }
+
 .info{
-	padding:0% 5% 0% 5%;
+	padding:2% 5% 2% 5%;
+}
+
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover{
+	background-color:rgba(176, 190, 197, 0.3);
+	border-bottom:5px solid #b81c1d;
+	-webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    -ms-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+}
+
+.nav-pills > li > a:hover, .nav-pills>li.active>a:hover {
+    background-color: transparent;
+    color: #263238;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    -ms-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
 }
 
 .nav{
@@ -41,14 +62,17 @@ li a:first-child{ /*first-child selector matches first a element in all li eleme
 	text-align:right;
 	text-transform:uppercase;
 }
-li a:hover{
+
+
+.footer{
+	margin:0 auto;
+	background-color:#263238;
+	color:#ffffff;
+	font-size:0.8em;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.footer p{
 
 }
-.active{
-	border-bottom:5px solid #b81c1d;
-}
-
-.active a{
-	background-color:transparent;
-}
-
